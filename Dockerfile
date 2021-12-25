@@ -1,4 +1,5 @@
 FROM golang:1.18-rc-bullseye as builder
+ENV GOPROXY=https://goproxy.io,direct
 RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
