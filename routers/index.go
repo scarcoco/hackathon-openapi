@@ -3,8 +3,8 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 
-	v1 "github.com/scarcoco/hackathon-openapi/controllers/v1"
-	v2 "github.com/scarcoco/hackathon-openapi/controllers/v2"
+	v1 "github.com/scarcoco/trajectory-api/controllers/v1"
+	v2 "github.com/scarcoco/trajectory-api/controllers/v2"
 )
 
 func Routers(r *gin.Engine) {

@@ -1,4 +1,4 @@
-module github.com/scarcoco/hackathon-openapi
+module github.com/scarcoco/trajectory-api
 
 go 1.17
 

@@ -10,4 +10,4 @@ RUN mkdir -p /app
 COPY --from=builder /app/main /app
 
 WORKDIR /app
-ENTRYPOINT  ["/app/main"]
+CMD  ["/app/main"]

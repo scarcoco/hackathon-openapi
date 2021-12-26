@@ -1,3 +1,3 @@
-# hackathon-openapi
+# trajectory-api
 
 hackathon openapi

@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/scarcoco/hackathon-openapi/routers"
+	"github.com/scarcoco/trajectory-api/routers"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
