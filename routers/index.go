@@ -8,6 +8,13 @@ import (
 )
 
 func Routers(r *gin.Engine) {
+
+	r.GET("/healthz", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "ok",
+		})
+	})
+
 	v1.Setup(r)
 	v2.Setup(r)
 }
