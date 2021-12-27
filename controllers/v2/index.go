@@ -6,7 +6,7 @@ import (
 
 func Setup(r *gin.Engine) {
 
-	v2 := r.Group("/v2")
+	v2 := r.Group("/api/v2")
 
 	v2.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{

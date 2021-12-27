@@ -7,7 +7,7 @@ import (
 
 func Setup(r *gin.Engine) {
 
-	v1 := r.Group("/v1")
+	v1 := r.Group("/api/v1")
 
 	v1.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -17,7 +17,7 @@ func Setup(r *gin.Engine) {
 	v1.GET("/reporter/list", func(c *gin.Context) {
 		c.JSON(200, reporter.List())
 	})
-	v1.GET("/reporter/:id", func(c *gin.Context) {
+	v1.GET("/reporter/:id/detail", func(c *gin.Context) {
 		c.JSON(200, reporter.Detail())
 	})
 	v1.GET("/reporter/:id/location", func(c *gin.Context) {

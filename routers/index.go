@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
 	v1 "github.com/scarcoco/trajectory-api/controllers/v1"
@@ -14,6 +15,9 @@ func Routers(r *gin.Engine) {
 			"message": "ok",
 		})
 	})
+	config := cors.DefaultConfig()
+	config.AllowOrigins = []string{"*"}
+	r.Use(cors.New(config))
 
 	v1.Setup(r)
 	v2.Setup(r)
